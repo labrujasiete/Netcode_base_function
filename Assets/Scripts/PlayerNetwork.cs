@@ -44,7 +44,11 @@ public class PlayerNetwork : NetworkBehaviour
         if(!IsOwner) return;
 
         if(Input.GetKeyDown(KeyCode.T)){
-            TestServerRpc(new ServerRpcParams());
+            
+            //TestServerRpc(new ServerRpcParams());
+
+            TestClientRpc();
+
             // randomNumber.Value = new MyCustomData{
             //     _int = 10,
             //     _bool = false,
